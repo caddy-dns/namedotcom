@@ -4,5 +4,5 @@ go 1.16
 
 require (
 	github.com/caddyserver/caddy/v2 v2.3.0
-	github.com/libdns/namedotcom v0.0.0-20210420082405-19f45a3c284b
+	github.com/libdns/namedotcom v0.0.0-20210420084707-192ab6de2a83
 )
