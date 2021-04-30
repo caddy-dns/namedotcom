@@ -27,10 +27,10 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
       "challenges": {
           "dns": {
               "provider": {
-                 "name": "namedotcom",
-                 "api_token": "{env.NAMEDOTCOM_API_TOKEN}",
-                 "user_name": "{env.NAMEDOTCOM_USER_NAME}",
-                 "api_url": "{env.NAMEDOTCOM_API_URL}"
+                 "name":   "namedotcom",
+                 "token":  "{env.NAMEDOTCOM_TOKEN}",
+                 "user":   "{env.NAMEDOTCOM_USER}",
+                 "server": "{env.NAMEDOTCOM_SERVER}"
               }
           }
       }
@@ -42,9 +42,9 @@ or with the Caddyfile:
 ```
 tls {
   dns namedotcom {
-    api_token {$NAMEDOTCOM_API_TOKEN}
-    api_url {$NAMEDOTCOM_API_URL}
-    user_name {$NAMEDOTCOM_USER_NAME}
+    token {$NAMEDOTCOM_TOKEN}
+    server {$NAMEDOTCOM_SERVER}
+    user {$NAMEDOTCOM_USER}
   }
 }
 ```
