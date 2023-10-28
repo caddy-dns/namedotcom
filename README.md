@@ -28,7 +28,7 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
           "dns": {
               "provider": {
                  "name":   "namedotcom",
-                 "token":  "{env.NAMEDOTCOM_TOKEN}",
+                 "api_token":  "{env.NAMEDOTCOM_TOKEN}",
                  "user":   "{env.NAMEDOTCOM_USER}",
                  "server": "{env.NAMEDOTCOM_SERVER}"
               }
